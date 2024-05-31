@@ -1,0 +1,61 @@
+/* Reset CSS */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles spécifiques à l'application */
+.message-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.message-item {
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.message-item.sent {
+  align-self: flex-end;
+  background-color: #e5f4e5;
+}
+
+.message-item.received {
+  align-self: flex-start;
+  background-color: #f2f2f2;
+}
+
+.message-info {
+  font-size: 0.8em;
+  color: #777;
+}
+
+.chat-input-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.chat-input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.send-button {
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
